@@ -599,6 +599,12 @@ body{
   overscroll-behavior:contain;
   padding-bottom:120px;
   -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+  -ms-overflow-style:none;
+}
+
+#materialPage::-webkit-scrollbar{
+  display:none;
 }
 
 /* Titre fixe pendant le scroll */
