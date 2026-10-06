@@ -115,7 +115,7 @@ function renderMaterials() {
   };
 
   grid.innerHTML = stockData.materials.map(material => {
-    const total = (material.references || []).reduce((sum, ref) => sum + Number(ref.quantity || 0), 0);
+    const total = (material.references || []).length;
     const iconClass = visualMap[material.id] || 'sheet';
     
     return `
@@ -125,7 +125,7 @@ function renderMaterials() {
         </div>
         <h2 class="material-name">${escapeHtml(material.name)}</h2>
         <div class="material-meta">
-          <span>${total} élément${total > 1 ? 's' : ''}</span>
+          <span>${total} référence${total > 1 ? 's' : ''}</span>
           <span class="material-arrow">›</span>
         </div>
       </button>
