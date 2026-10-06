@@ -166,7 +166,26 @@ function renderMaterialPage(material) {
     }
     container.innerHTML = `
       <div class="thickness-section">
-        ${refs.map(ref => `
+        ${[...refs].sort((a, b) => {
+  const aLabel = String(a.label || '').trim();
+  const bLabel = String(b.label || '').trim();
+
+  const aNumber = /^\d/.test(aLabel);
+  const bNumber = /^\d/.test(bLabel);
+
+  if (aNumber && !bNumber) return 1;
+  if (!aNumber && bNumber) return -1;
+
+  if (aNumber && bNumber) {
+    return parseFloat(aLabel.replace(',', '.')) -
+           parseFloat(bLabel.replace(',', '.'));
+  }
+
+  return aLabel.localeCompare(bLabel, 'fr', {
+    numeric: true,
+    sensitivity: 'base'
+  });
+}).map(ref => `
           <div class="format-row">
             <span class="format-size">${escapeHtml(ref.label)}</span>
             <span class="format-quantity">${Number(ref.quantity || 0)}</span>
