@@ -656,9 +656,9 @@ body{
 }
 
 .thickness-section{
-  border:1px solid var(--border);
+  border:1px solid #cbd8e8;
   border-radius:var(--radius);
-  background:#fff;
+  background:#f8fbff;
   box-shadow:var(--shadow);
   overflow:hidden;
 }
@@ -666,7 +666,7 @@ body{
 .thickness-title{
   margin:0;
   padding:16px 18px;
-  border-bottom:1px solid var(--border);
+  border-bottom:1px solid #dce5ef;
   font-size:17px;
 }
 
