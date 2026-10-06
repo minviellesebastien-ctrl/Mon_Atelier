@@ -21,7 +21,7 @@ const MATERIALS = [
 ];
 
 const THICKNESS_OPTIONS = [0.5, 0.75, 1, 1.5, 2, 3, 5, 8, 10, 16, 19]; // Inclut l'épaisseur 16 mm
-const STORAGE_KEY = 'inventaire-v2';
+const STORAGE_KEY = 'mon-atelier-v1';
 
 const defaultData = {
   version: 4,
