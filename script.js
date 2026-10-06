@@ -1,10 +1,3 @@
-/* ==========================================================================
-   ATELIER_STOCK - SCRIPT PRINCIPAL
-   ========================================================================== */
-
-
-
-// 2. Constantes et Configuration
 const MATERIALS = [
   { id: 'forex', name: 'Forex', color: '#8B95A1', visual: 'forex' },
   { id: 'plexi', name: 'Plexi', color: '#38BDF8', visual: 'plexi' },
