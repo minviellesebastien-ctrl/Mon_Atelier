@@ -2,14 +2,7 @@
    ATELIER_STOCK - SCRIPT PRINCIPAL
    ========================================================================== */
 
-// 1. Enregistrement du Service Worker pour l'installabilité PWA
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js')
-      .then(reg => console.log('Service Worker enregistré pour Inventaire'))
-      .catch(err => console.error('Erreur Service Worker :', err));
-  });
-}
+
 
 // 2. Constantes et Configuration
 const MATERIALS = [
