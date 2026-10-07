@@ -13,7 +13,7 @@ const MATERIALS = [
   { id: 'divers', name: 'Divers', color: '#64748B', visual: 'divers' }
 ];
 
-const THICKNESS_OPTIONS = [0.5, 0.75, 1, 1.5, 2, 3, 5, 8, 10, 16, 19]; // Inclut l'épaisseur 16 mm
+const THICKNESS_OPTIONS = [0.5, 0.75, 1, 1.5, 2, 3, 5, 6, 8, 10, 12, 15, 16, 19, 20];
 const STORAGE_KEY = 'mon-atelier-v1';
 
 const defaultData = {
