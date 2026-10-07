@@ -149,7 +149,7 @@ function openMaterial(id) {
   const isSpecial = ['emballage-carton', 'divers'].includes(material.id);
   document.getElementById('cartonEntry').hidden = !isSpecial;
   document.querySelector('.carton-entry-title').textContent = material.id === 'divers' ? 'Ajouter un élément' : 'Ajouter un emballage';
-  document.getElementById('cartonInput').placeholder = material.id === 'divers' ? 'Ex. Visserie, accessoire, autre…' : 'Ex. caisse 400 × 300 × 200';
+  document.getElementById('cartonInput').placeholder = material.id === 'divers' ? 'Ex. carton ondulé' : 'Ex. caisse 40×30×20';
 
   renderMaterialPage(material);
   scrollTo(0, 0);
