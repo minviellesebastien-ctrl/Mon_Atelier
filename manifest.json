@@ -1,0 +1,11 @@
+{
+  "id": "/Mon_Atelier/",
+  "name": "Mon Atelier",
+  "short_name": "Mon Atelier",
+  "start_url": "/Mon_Atelier/",
+  "scope": "/Mon_Atelier/",
+  "display": "standalone",
+  "background_color": "#f4f6f8",
+  "theme_color": "#2563eb",
+  "lang": "fr"
+}
